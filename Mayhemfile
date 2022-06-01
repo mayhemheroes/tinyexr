@@ -1,0 +1,7 @@
+project: rnshah9/tinyexr
+target: tinyexr
+tests:
+  - file://asakusa.exr
+
+cmds:
+  - cmd: /repo/build/test_tinyexr @@
