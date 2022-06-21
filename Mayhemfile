@@ -1,6 +1,6 @@
-project: rnshah9/tinyexr
-target: tinyexr
-tests:
+project: tinyexr
+target: test-tinyexr
+testsuite:
   - file://asakusa.exr
 
 cmds:
