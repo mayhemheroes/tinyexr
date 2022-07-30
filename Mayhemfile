@@ -4,4 +4,4 @@ testsuite:
   - file://asakusa.exr
 
 cmds:
-  - cmd: /repo/build/test_tinyexr @@
+  - cmd: /test_tinyexr @@
