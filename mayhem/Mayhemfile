@@ -1,0 +1,13 @@
+# Historical target name preserved: the archived integration fuzzed `test_tinyexr @@`
+# (a file-input CLI whose only work is LoadEXR on the input). It is now an in-process
+# libFuzzer harness (mayhem/fuzz_tinyexr.cc) over the same TinyEXR v1 decode API.
+project: savantenvs/tinyexr
+target: test-tinyexr
+
+cmds:
+  - cmd: /mayhem/test-tinyexr
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/test-tinyexr/testsuite
